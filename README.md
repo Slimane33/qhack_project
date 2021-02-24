@@ -43,7 +43,7 @@ We propose 3 differents datasets to train and test our algorithm
 
 #### Code architecture
 - The **Pennylane** variational ansatz are defined in `utils.py`
-- The NLP preprocessing using FastText is made in `embeddings.ipynb` and generate readable file as `embeddings.npy`, `sentences.npy` etc.
+- The NLP preprocessing using FastText is made in `preprocessing_newsgroup.py` and generate readable file as `embeddings.npy`, `sentences.npy` etc.
 - In `config.py` are defined the global configurations such as the number of words, of qubit per word, and the number of layers per ansatz.
 - In this notebook, we train the quantum variational circuit and test applications
 
