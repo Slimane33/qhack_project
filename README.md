@@ -36,8 +36,8 @@ We can use AWS SV1 for parallelizing the gradient during the training. But the c
 
 #### Datasets
 We propose 3 differents datasets to train and test our algorithm
-- **IMDB Dataset** composed of (?) sentences and (?) words in total
-- **Newsgroup Dataset** composed of (?) sentences and (?) words in total
+- **IMDB Dataset** composed of 100 000 sentences and 12 words in total
+- **Newsgroup Dataset** composed of 100 000 sentences and 12 words in total
 - An **synthetic dataset** of 'dummy' sentences with small number of sentences and words, for performance limitation and grammatical simplicity
 
 
