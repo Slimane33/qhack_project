@@ -4,7 +4,7 @@
 
 
 ## Introduction
-In this project, we developed a variational quantum algorithm for **Natural Language Processing** (NLP). Our goal is to **train a quantum circuit such that it can process and recognize words**. Applications varies from **word matching**, **sentence completion**, **sentence generation** and more.
+In this project, we developed a variational quantum algorithm for **Natural Language Processing** (NLP). Our goal is to **train a quantum circuit such that it can process and recognize words**. Applications varies from **word matching**, **sentence completion**, **sentence generation**, **named entity recognition** and more.
 
 ---
 #### Word encoding
