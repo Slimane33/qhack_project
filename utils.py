@@ -114,3 +114,8 @@ def encode_words(embeddings, indices):
     indices : position in the circuit, will be encoded in wires[qbits_per_word * index : qbits_per_word * (index+1)]"""
     for i,vec in enumerate(embeddings):
         qml.templates.embeddings.AmplitudeEmbedding(vec, range(indices[i]*qbits_per_word, (indices[i]+1)*qbits_per_word), pad=0.0, normalize=True)
+        
+def entity_recognition_decoder(parameters, wires):
+    assert parameters.shape[1] == qbits_per_word
+    for i in range(parameters.shape[0]):
+        Word_Shuffle_circuit(parameters[i], wires) 
