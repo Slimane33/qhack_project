@@ -48,6 +48,15 @@ We propose 3 differents datasets to train and test our algorithm
 - In the notebook `Final_notebook_train.ipynb`, we train the quantum variational circuit and test applications
 
 #### How to run this project
+- You will need the following library:
+```
+nltk
+scikit-learn
+gensim
+numpy
+pennylane
+pickle
+```
 - The creation of the **Newsgroup Dataset**  and the **synthetic dataset** can be made via 
 ```
 python preprocessing_dataset.py
