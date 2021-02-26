@@ -25,6 +25,10 @@ With such a circuit trained, we can provide a new sentence with a missing word a
 
 <img src="sentence_generation.png" alt="Drawing" style="width: 300px;"/>
 
+By training a decoder circuit, we can perform Named Entity Recognition to classify words into categories, such as people, places, etc.
+
+<img src="NER.png" alt="Drawing" style="width: 300px;"/>
+
 
 
 #### Performances
