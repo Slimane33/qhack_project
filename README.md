@@ -43,8 +43,26 @@ We propose 3 differents datasets to train and test our algorithm
 
 #### Code architecture
 - The **Pennylane** variational ansatz are defined in `utils.py`
-- The NLP preprocessing using FastText is made in `preprocessing_newsgroup.py` and generate readable file as `embeddings.npy`, `sentences.npy` etc.
+- The NLP preprocessing using FastText is made in `preprocessing_dataset.py` and generate readable file as `embeddings.npy`, `sentences.npy` etc.
 - In `config.py` are defined the global configurations such as the number of words, of qubit per word, and the number of layers per ansatz.
-- In this notebook, we train the quantum variational circuit and test applications
+- In the notebook `Final_notebook_train.ipynb`, we train the quantum variational circuit and test applications
+
+#### How to run this project
+- The creation of the **Newsgroup Dataset**  and the **synthetic dataset** can be made via 
+```
+python preprocessing_dataset.py
+```
+- The training is made in `Final_notebook_train.ipynb`
+- The applications with saved parameters are in `Applications.ipynb`
+- All the code runs in the Amazon bracket instances, you may encounter some issue if you run it locally especially when using the  pennylane `qml.templates.AmplitudeEncoding`procedure.
+- Be careful to update the global variables in `config.py` such that they match your desired configuration. 
+
+#### Pretrained models
+We provide several pretrained models in the folder `saved_parameters`:
+- In `dummy_dataset/5_words`: 5 words, 2 qubits/words, 2 layers trained on the 5 words dummy dataset
+- In `dummy_dataset/4_words`: 4 words, 3 qubits/words, 2 layers on the 4 words dummy dataset
+- In `dummy_dataset/decoder`: 5 words, 2 qubits/words for the decoder ansatz for **Named Entity Recognition** on the 5 words dummy dataset
+- In `newsgroup`: 10 words, 2 qubits/word trained on the newsgroup dataset
+
 
 ---
